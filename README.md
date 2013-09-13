@@ -1,4 +1,4 @@
-Benchmarking the Scalability and Elasticity of Riak NoSQL Database
+Benchmarking the Scalability and Elasticity of Riak
 -----------
 
 Introduction
