@@ -10,11 +10,11 @@ For more information please find the report (`report.pdf`).
 
 Following issues are configurable in the `run.sh` file:
 
-	* The duration of a benchmark in minutes
-	* The ratio of traffic generator nodes to Riak nodes
-	* Riak Version
-	* Number of times that experiment repeats
-	* Number of nodes that will go down and come up during elastisity benchmark
+*	The duration of a benchmark in minutes
+*	The ratio of traffic generator nodes to Riak nodes
+*	Riak Version
+*	Number of times that experiment repeats
+*	Number of nodes that will go down and come up during elastisity benchmark
 	
 Following issues are configurable in the `experiment.sh` file:
 
