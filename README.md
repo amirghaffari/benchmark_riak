@@ -18,15 +18,15 @@ Following issues are configurable in the `run.sh` file:
 	
 Following issues are configurable in the `experiment.sh` file:
 
-	$ Storage backend for Riak, i.e. Bitcask or eLevelDB 
-	$ Erlang path for compiling Riak and Basho Bench
-	$ R statistics language path to generate graph
-	$ Name and IP address of nodes in the cluster
+*	Storage backend for Riak, i.e. Bitcask or eLevelDB 
+*	Erlang path for compiling Riak and Basho Bench
+*	R statistics language path to generate graph
+*	Name and IP address of nodes in the cluster
 	
 There are two general config files for Basho Bench in the `basho_bench_config` directory, one for HTTP interace and the another for the Protocol Buffers interface. The following issues are configurable in the config files:
 
-	$ Number of worker process on each traffic generator node
-	$ Database commands (e.g. `get`, `insert`, `update`) that are used in the benchmark
+*	Number of worker process on each traffic generator node
+*	Database commands (e.g. `get`, `insert`, `update`) that are used in the benchmark
 
 How to run the benchmark  
 ----------------------------------------
