@@ -5,8 +5,9 @@ Introduction
 ------------
 In the [RELEASE project] (http://www.release-project.eu/) we aim to improve the scalability of Erlang on emergent commodity architectures with 100,000 cores. Such architectures require scalable and available persistent storage on up to 100 hosts. We evaluate the suitability of four popular Erlang DBMSs ([Mnesia] (http://www.erlang.org/doc/man/mnesia.html), [CouchDB] (http://couchdb.apache.org/), [Riak] (http://basho.com/riak/), and [Cassandra] (http://cassandra.apache.org/)) for large-scale architectures. Our theoretical evaluation shows that Dynamo-style NoSQL DBMS like Riak and Cassandra do have a potential to provide scalable storage for large distributed architecture as required by the RELEASE project. Then, we investigate Riak scalability and elasticity in practice by employing Basho Bench on the Kalkyl cluster with 100 nodes. For more information please find the report (`report.pdf`). Here we explain how to customize the scripts to match your specific environment.
 
+Customization
+------------
 In the cluster each node can be either a trafﬁc generator or a Riak node. A trafﬁc generator node runs one copy of Basho Bench that generates and sends commands to Riak nodes. A Riak node contains a complete and independent copy of the Riak package which is identiﬁed by an IP address and a port number.
-For more information please find the report (`report.pdf`).
 
 Following issues are configurable in the `run.sh` file:
 
