@@ -9,7 +9,7 @@ Customization
 ------------
 In the cluster each node can be either a trafﬁc generator or a Riak node. A trafﬁc generator node runs one copy of the Basho Bench that generates and sends commands to the Riak nodes. A Riak node contains a complete and independent copy of the Riak package which is identiﬁed by an IP address and a port number.
 
-The followings are configurable in the `run.sh` file:
+The followings are configurable in the [`run.sh`] (https://github.com/amirghaffari/benchmark_riak/blob/master/report.pdf) file:
 
 *	The duration of a benchmark in minutes
 *	The ratio of traffic generator nodes to Riak nodes
