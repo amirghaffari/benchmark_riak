@@ -3,13 +3,13 @@ Benchmarking the Scalability and Elasticity of the Riak NoSQL DBMS
 
 Introduction
 ------------
-The [RELEASE project] (http://www.release-project.eu/) aims to improve the scalability of [the Erlang programming language] (https://www.erlang.org/). Scalable applications require scalable and available persistent storage to save and retrieve their business data. I evaluate the suitability of four popular NoSQL DBMSs ([Mnesia] (http://www.erlang.org/doc/man/mnesia.html), [CouchDB] (http://couchdb.apache.org/), [Riak] (http://basho.com/riak/), and [Cassandra] (http://cassandra.apache.org/)) for large-scale Erlang applications. I investigate the scalability and elasticity of the Riak NoSQL DBMS by employing the [Basho Bench] (http://docs.basho.com/riak/latest/ops/building/benchmarking/) on the [Kalkyl cluster] (http://www.uppmax.uu.se/resources/systems/) up to 100 nodes. More details about the benchmark are available in the `report.pdf` file. The followings explain how to customize the scripts to match your specific environment.
+The [RELEASE project] (http://www.release-project.eu/) aims to improve the scalability of [the Erlang programming language] (https://www.erlang.org/). Scalable applications require scalable and available persistent storage to save and retrieve their business data. I evaluate the suitability of four popular NoSQL DBMSs ([Mnesia] (http://www.erlang.org/doc/man/mnesia.html), [CouchDB] (http://couchdb.apache.org/), [Riak] (http://basho.com/riak/), and [Cassandra] (http://cassandra.apache.org/)) for large-scale Erlang applications. I investigate the scalability and elasticity of the Riak NoSQL DBMS by employing the [Basho Bench] (http://docs.basho.com/riak/latest/ops/building/benchmarking/) on the [Kalkyl cluster] (http://www.uppmax.uu.se/resources/systems/) up to 100 nodes. More details about the benchmark are available in the [`report.pdf`] (https://github.com/amirghaffari/benchmark_riak/blob/master/report.pdf) file. The followings explain how to customize the scripts to match your specific environment.
 
 Customization
 ------------
 In the cluster each node can be either a trafﬁc generator or a Riak node. A trafﬁc generator node runs one copy of the Basho Bench that generates and sends commands to the Riak nodes. A Riak node contains a complete and independent copy of the Riak package which is identiﬁed by an IP address and a port number.
 
-The followings are configurable in the [`run.sh`] (https://github.com/amirghaffari/benchmark_riak/blob/master/report.pdf) file:
+The followings are configurable in the `run.sh` file:
 
 *	The duration of a benchmark in minutes
 *	The ratio of traffic generator nodes to Riak nodes
